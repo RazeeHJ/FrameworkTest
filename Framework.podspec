@@ -7,5 +7,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "13.0"
   spec.author       = { "Razee" => "razee.hj@gmail.com" }
   spec.source       = { :git => "https://github.com/RazeeHJ/FrameworkTest.git", :tag => "#{spec.version}" }
-  spec.source_files  = "Framework/**/*.{swift, storyboard}"
+  spec.source_files  = "Framework/**/*.{swift, storyboard, xcassets}"
 end
