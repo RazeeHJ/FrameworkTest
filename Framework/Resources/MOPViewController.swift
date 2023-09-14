@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class ViewController: UIViewController {
+public class MOPViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
