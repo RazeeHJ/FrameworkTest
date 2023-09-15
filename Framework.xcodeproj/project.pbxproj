@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9199EB602AB440AB00BE364D /* MopProgrammaticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9199EB5F2AB440AB00BE364D /* MopProgrammaticVC.swift */; };
+		9199EB622AB4436300BE364D /* NavigationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9199EB612AB4436300BE364D /* NavigationProtocols.swift */; };
 		A0D43E4A2AB3269E00BCD117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43E492AB3269E00BCD117 /* AppDelegate.swift */; };
 		A0D43E4C2AB3269E00BCD117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43E4B2AB3269E00BCD117 /* SceneDelegate.swift */; };
 		A0D43E4E2AB3269E00BCD117 /* MOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43E4D2AB3269E00BCD117 /* MOPViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9199EB5F2AB440AB00BE364D /* MopProgrammaticVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MopProgrammaticVC.swift; sourceTree = "<group>"; };
+		9199EB612AB4436300BE364D /* NavigationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocols.swift; sourceTree = "<group>"; };
 		A0D43E462AB3269E00BCD117 /* Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D43E492AB3269E00BCD117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D43E4B2AB3269E00BCD117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				A0D43E4D2AB3269E00BCD117 /* MOPViewController.swift */,
 				A0D43E602AB33F6C00BCD117 /* Storyboard */,
 				A0D43E5F2AB33F6700BCD117 /* Assets */,
+				9199EB5F2AB440AB00BE364D /* MopProgrammaticVC.swift */,
+				9199EB612AB4436300BE364D /* NavigationProtocols.swift */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D43E4E2AB3269E00BCD117 /* MOPViewController.swift in Sources */,
+				9199EB622AB4436300BE364D /* NavigationProtocols.swift in Sources */,
+				9199EB602AB440AB00BE364D /* MopProgrammaticVC.swift in Sources */,
 				A0D43E4A2AB3269E00BCD117 /* AppDelegate.swift in Sources */,
 				A0D43E4C2AB3269E00BCD117 /* SceneDelegate.swift in Sources */,
 			);
@@ -311,7 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WA9JUKEPEP;
+				DEVELOPMENT_TEAM = 9N8ZC32DMP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Framework/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -339,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WA9JUKEPEP;
+				DEVELOPMENT_TEAM = 9N8ZC32DMP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Framework/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
