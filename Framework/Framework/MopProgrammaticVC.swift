@@ -96,7 +96,7 @@ public class MopProgrammaticVC: UIViewController {
     }
     
     @objc func pressedLoginButton2() {
-        self.dismiss(animated: false)
+        navigationController?.popToRootViewController(animated: false)
         navigationProtocol.presentLogin()
     }
 }
