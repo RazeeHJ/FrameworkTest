@@ -11,7 +11,7 @@ import UIKit
 public class MopProgrammaticVC: UIViewController {
     private let titleLabel = UILabel()
     private let midButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-    var navigation: NavigateProtocol?
+    public var navigation: NavigateProtocol?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
