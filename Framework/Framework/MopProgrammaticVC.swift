@@ -47,8 +47,8 @@ public class MopProgrammaticVC: UIViewController {
     }
     
     @objc func pressedButton() {
-        if let vc = navigationController {
-            self.navigationController?.pushViewController(vc, animated: true)
+        if let vc = nextViewController {
+            self.present(vc, animated: true)
         }
     }    
 }
