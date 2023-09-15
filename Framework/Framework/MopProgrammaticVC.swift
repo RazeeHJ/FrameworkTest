@@ -19,7 +19,7 @@ class MopProgrammaticVC: UIViewController {
         
         view.backgroundColor = .white
         addViews()
-        
+        print("Started")
     }
     
     private func addViews() {
