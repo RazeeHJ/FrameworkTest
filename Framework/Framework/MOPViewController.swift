@@ -24,7 +24,7 @@ public class MOPViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func didPress(_ sender: Any) {
+    @IBAction public func didPress(_ sender: Any) {
         print("did press")
         self.navigation?.presentLogin()
     }
