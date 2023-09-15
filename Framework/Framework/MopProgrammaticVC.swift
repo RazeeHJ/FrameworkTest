@@ -11,7 +11,7 @@ import UIKit
 public class MopProgrammaticVC: UIViewController {
     private let titleLabel = UILabel()
     private let midButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-    public var navigation: NavigateProtocol?
+    public var nextViewController: UIViewController?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +47,8 @@ public class MopProgrammaticVC: UIViewController {
     }
     
     @objc func pressedButton() {
-        print("Pressed")
-        navigation?.presentLogin()
+        if let vc = navigationController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }    
 }
