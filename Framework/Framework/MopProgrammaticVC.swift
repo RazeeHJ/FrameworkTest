@@ -38,7 +38,7 @@ public class MopProgrammaticVC: UIViewController {
     }
     
     private func layoutButton() {
-        midButton.setTitle("Go to nested view controller", for: .normal)
+        midButton.setTitle("Present nested view controller", for: .normal)
         midButton.backgroundColor = .gray
         midButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
         

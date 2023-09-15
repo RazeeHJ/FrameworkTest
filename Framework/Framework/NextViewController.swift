@@ -58,6 +58,7 @@ public class NextViewController: UIViewController {
     }
     
     @objc func pressedButton() {
+        self.dismiss(animated: false)
         navigationProtocol.presentSomeOtherView()
     }
 }
