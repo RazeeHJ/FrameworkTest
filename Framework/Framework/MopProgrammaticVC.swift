@@ -14,6 +14,8 @@ public class MopProgrammaticVC: UIViewController {
     
     private let titleLabel = UILabel()
     private let midButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+    private let loginButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+    
     public var nextViewController: UIViewController?
     
     public init(navigationProtocol: NavigateProtocol) {
@@ -48,6 +50,17 @@ public class MopProgrammaticVC: UIViewController {
         midButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
+    private func layoutLoginButton() {
+        loginButton.setTitle("Present login from root", for: .normal)
+        loginButton.backgroundColor = .blue
+        loginButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
+        
+        view.addSubview(midButton)
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        loginButton.topAnchor.constraint(equalTo: midButton.bottomAnchor, constant: 20).isActive = true
+    }
+    
     
     private func layoutTitleLabel() {
         titleLabel.text = "I'm a cool VC without a storyboard"
@@ -63,5 +76,9 @@ public class MopProgrammaticVC: UIViewController {
         if let vc = nextViewController {
             self.present(vc, animated: true)
         }
-    }    
+    }
+    
+    @objc func pressedLoginButton() {
+        navigationProtocol.presentLogin()
+    }
 }
