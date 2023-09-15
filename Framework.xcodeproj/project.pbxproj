@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9199EB602AB440AB00BE364D /* MopProgrammaticVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9199EB5F2AB440AB00BE364D /* MopProgrammaticVC.swift */; };
 		9199EB622AB4436300BE364D /* NavigationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9199EB612AB4436300BE364D /* NavigationProtocols.swift */; };
+		91AEE63B2AB47A1A004D6909 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AEE63A2AB47A1A004D6909 /* NextViewController.swift */; };
 		A0D43E4A2AB3269E00BCD117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43E492AB3269E00BCD117 /* AppDelegate.swift */; };
 		A0D43E4C2AB3269E00BCD117 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43E4B2AB3269E00BCD117 /* SceneDelegate.swift */; };
 		A0D43E4E2AB3269E00BCD117 /* MOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D43E4D2AB3269E00BCD117 /* MOPViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		9199EB5F2AB440AB00BE364D /* MopProgrammaticVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MopProgrammaticVC.swift; sourceTree = "<group>"; };
 		9199EB612AB4436300BE364D /* NavigationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProtocols.swift; sourceTree = "<group>"; };
+		91AEE63A2AB47A1A004D6909 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		A0D43E462AB3269E00BCD117 /* Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D43E492AB3269E00BCD117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D43E4B2AB3269E00BCD117 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				A0D43E5F2AB33F6700BCD117 /* Assets */,
 				9199EB5F2AB440AB00BE364D /* MopProgrammaticVC.swift */,
 				9199EB612AB4436300BE364D /* NavigationProtocols.swift */,
+				91AEE63A2AB47A1A004D6909 /* NextViewController.swift */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D43E4E2AB3269E00BCD117 /* MOPViewController.swift in Sources */,
+				91AEE63B2AB47A1A004D6909 /* NextViewController.swift in Sources */,
 				9199EB622AB4436300BE364D /* NavigationProtocols.swift in Sources */,
 				9199EB602AB440AB00BE364D /* MopProgrammaticVC.swift in Sources */,
 				A0D43E4A2AB3269E00BCD117 /* AppDelegate.swift in Sources */,

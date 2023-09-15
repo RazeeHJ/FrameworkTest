@@ -1,5 +1,5 @@
 //
-//  MopProgrammaticVC.swift
+//  NextViewController.swift
 //  Framework
 //
 //  Created by Pontus Croneld on 2023-09-15.
@@ -8,13 +8,12 @@
 import Foundation
 import UIKit
 
-public class MopProgrammaticVC: UIViewController {
+public class NextViewController: UIViewController {
     
     private let navigationProtocol: NavigateProtocol
     
     private let titleLabel = UILabel()
     private let midButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-    public var nextViewController: UIViewController?
     
     public init(navigationProtocol: NavigateProtocol) {
         self.navigationProtocol = navigationProtocol
@@ -38,7 +37,7 @@ public class MopProgrammaticVC: UIViewController {
     }
     
     private func layoutButton() {
-        midButton.setTitle("Go to nested view controller", for: .normal)
+        midButton.setTitle("Navigate out of framework and to a separate screen", for: .normal)
         midButton.backgroundColor = .gray
         midButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
         
@@ -50,7 +49,7 @@ public class MopProgrammaticVC: UIViewController {
     
     
     private func layoutTitleLabel() {
-        titleLabel.text = "I'm a cool VC without a storyboard"
+        titleLabel.text = "This is a nested view controller"
         view.addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50).isActive = true
@@ -59,9 +58,6 @@ public class MopProgrammaticVC: UIViewController {
     }
     
     @objc func pressedButton() {
-        nextViewController = NextViewController(navigationProtocol: navigationProtocol)
-        if let vc = nextViewController {
-            self.present(vc, animated: true)
-        }
-    }    
+        navigationProtocol.presentSomeOtherView()
+    }
 }
