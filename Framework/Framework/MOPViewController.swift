@@ -17,7 +17,3 @@ public class MOPViewController: UIViewController {
         print("did press")
     }
 }
-
-public protocol NavigateProtocol {
-    func presentLogin()
-}
