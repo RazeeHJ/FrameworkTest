@@ -9,14 +9,12 @@ import Foundation
 import UIKit
 
 public class MopProgrammaticVC: UIViewController {
-    
     private let titleLabel = UILabel()
     private let midButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+    var navigation: NavigateProtocol?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
         view.backgroundColor = .white
         addViews()
         print("Started")
@@ -28,7 +26,6 @@ public class MopProgrammaticVC: UIViewController {
     }
     
     private func layoutButton() {
-        
         midButton.setTitle("Navigate back", for: .normal)
         midButton.backgroundColor = .gray
         midButton.addTarget(self, action: #selector(pressedButton), for: .touchUpInside)
@@ -51,5 +48,6 @@ public class MopProgrammaticVC: UIViewController {
     
     @objc func pressedButton() {
         print("Pressed")
+        navigation?.presentLogin()
     }    
 }
