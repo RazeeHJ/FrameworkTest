@@ -54,7 +54,7 @@ public class MopProgrammaticVC: UIViewController {
     private func layoutLoginButton() {
         loginButton.setTitle("Present login from root", for: .normal)
         loginButton.backgroundColor = .blue
-        loginButton.addTarget(self, action: #selector(pressedLoginButton()), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(pressedLoginButton), for: .touchUpInside)
         
         view.addSubview(loginButton)
         loginButton.translatesAutoresizingMaskIntoConstraints = false
