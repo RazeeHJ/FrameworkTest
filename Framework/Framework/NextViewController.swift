@@ -26,6 +26,7 @@ public class NextViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         addViews()
     }
     
@@ -56,6 +57,6 @@ public class NextViewController: UIViewController {
     }
     
     @objc func pressedButton() {
-        self.dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }
