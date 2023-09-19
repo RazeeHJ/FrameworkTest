@@ -38,6 +38,7 @@ public class MopProgrammaticVC: UIViewController {
     private func addViews() {
         layoutPushButton()
         layoutLoginButton()
+        layoutPushButton2()
         layoutTitleLabel()
     }
     
